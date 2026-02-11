@@ -32,5 +32,5 @@ jobs:
           enable-commit-comment: true
           overwrites-pull-request-comment: true
         env:
-          NETLIFY_AUTH_TOKEN: nfp_f6sRtRiyTM7eYLWSvBFNmiwGAUMhxFJaf435
-          NETLIFY_SITE_ID: 220d6ad4-bde2-4648-84ad-db81591ad112
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
