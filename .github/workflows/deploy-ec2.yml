@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Pull Docker Image (runner sanity check)
-        run: docker pull chandrulinesmasher/mysampleappv1:latest
+        run: docker pull gokila2005/guvi-kec:latest
 
       - name: SSH and Deploy
         uses: appleboy/ssh-action@v1.0.3
